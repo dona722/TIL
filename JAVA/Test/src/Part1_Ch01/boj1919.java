@@ -16,6 +16,7 @@ public class boj1919 {
             countA[b.charAt(i) - 'b']++;
         }
         int ans = 0;
+        // Math.abs() : 절댓값
         for(int i = 0; i < 26; i++){
             if(countA[i] > countB[i])
                 ans += countA[i] - countB[i];
